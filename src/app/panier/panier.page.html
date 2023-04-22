@@ -13,7 +13,7 @@
 
   <ion-grid fixed>
     <ion-row>
-      <ion-col  *ngFor="let item of panier" ion-col size="11" size-md="4" size-lg="1"  class="modify-grid">
+      <ion-col  *ngFor="let item of panier" ion-col size="12" size-md="4" size-lg="1"  class="modify-grid">
         <h5>{{item.nom}}</h5>
         <div class="container">
         <ion-img src="{{item.image}}" style="width: 120px;" ></ion-img>
@@ -22,11 +22,11 @@
       <div class="subAddContain">
       <div class="subAdd">
       <ion-button (click)="onSub()" color="colorgris"  size="small" style="background-color: #f6f6f7; color: black;" >
-        -
+        <ion-icon name="remove-outline" ></ion-icon>
       </ion-button>
-      <p >{{item.quantite}}</p>
-      <ion-button ion-button  (click)="onAdd()" color="colorgris" expand="block" size="small"  style="background-color: #f6f6f7; color: black;" >
-        +
+      <span>{{item_qty}}</span>
+      <ion-button  ion-button  (click)="onAdd()" color="colorgris" expand="block" size="small"  style="background-color: #f6f6f7; color: black;" >
+        <ion-icon name="add-outline" ></ion-icon>
       </ion-button>
     </div>
       <h6>{{item.prix}}FCFA</h6>
@@ -35,7 +35,7 @@
       
     </ion-row>
   </ion-grid>
-    <ion-grid fixed>
+    <!-- <ion-grid fixed>
       <ion-row>
         <ion-col size="11" style="background-color: #f6f6f7;">
           <div class="price">
@@ -44,7 +44,11 @@
         </div>
         </ion-col>
       </ion-row>
-    </ion-grid>
+    </ion-grid> -->
+  <div class="price" style="background-color: #f6f6f7;">
+  <p> Total</p>
+  <p>prix</p>
+</div>
 
   <!-- <ion-grid fixed>
     <ion-row>

@@ -27,7 +27,7 @@ h6{
     color: #79DC21;
 }
 ion-col{
-    // box-shadow:12px 12px 1px 1px #ececee
+     box-shadow:2px 0px 12px 12px #ececee;
     background-color: white;
     // height: 100px;
 }
@@ -46,7 +46,7 @@ ion-content{
 .price{
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
     font-weight: bold;
     gap: 150px;
 }
@@ -73,7 +73,7 @@ ion-grid{
     // width:100%; 
     // margin: auto; 
     margin-top: 15px;
-    // --ion-grid-padding: 20px;
+    --ion-grid-padding: 20px;
     
     
 }
