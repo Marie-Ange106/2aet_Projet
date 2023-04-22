@@ -13,13 +13,24 @@
 
   <ion-grid fixed>
     <ion-row>
-      <ion-col  *ngFor="let item of panier" ion-col size="11" sizeMd="4" sizeLg="4"  class="modify-grid">
+      <ion-col  *ngFor="let item of panier" ion-col size="11" size-md="4" size-lg="1"  class="modify-grid">
         <h5>{{item.nom}}</h5>
         <div class="container">
         <ion-img src="{{item.image}}" style="width: 120px;" ></ion-img>
-        <p>{{item.quantite}}</p>
+        <p>{{item.quantite}} Plats</p>
       </div>
+      <div class="subAddContain">
+      <div class="subAdd">
+      <ion-button (click)="onSub()" color="colorgris"  size="small" style="background-color: #f6f6f7; color: black;" >
+        -
+      </ion-button>
+      <p >{{item.quantite}}</p>
+      <ion-button ion-button  (click)="onAdd()" color="colorgris" expand="block" size="small"  style="background-color: #f6f6f7; color: black;" >
+        +
+      </ion-button>
+    </div>
       <h6>{{item.prix}}FCFA</h6>
+    </div>
       </ion-col>
       
     </ion-row>
@@ -35,12 +46,14 @@
       </ion-row>
     </ion-grid>
 
-  <ion-grid fixed>
+  <!-- <ion-grid fixed>
     <ion-row>
       <ion-col size="11" class="modify-grid1">
       <button ion-button style="width: 100%; background-color: #79dc21; color: white; font-weight: bold;">Valider</button>  
       </ion-col>
     </ion-row>
-  </ion-grid>
+  </ion-grid> -->
+
+  <ion-button  color="colorgreen" expand="block" style="background-color: #79dc21">Valider</ion-button>
 
 </ion-content>

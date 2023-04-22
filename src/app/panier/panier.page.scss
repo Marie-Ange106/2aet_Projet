@@ -73,7 +73,7 @@ ion-grid{
     // width:100%; 
     // margin: auto; 
     margin-top: 15px;
-    --ion-grid-padding: 20px;
+    // --ion-grid-padding: 20px;
     
     
 }
@@ -87,4 +87,21 @@ ion-content{
     text-align: center;
     background-color: #79DC21;
     color: white;
+}
+
+.subAdd{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    font-weight: bold;
+    gap: 10px;
+    // background-color: #f6f6f7;
+}
+
+.subAddContain{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    font-weight: bold;
+    gap: 10px;
 }
