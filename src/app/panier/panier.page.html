@@ -1,4 +1,4 @@
-<div class="header">
+<div class="header" style="background-color: #f6f6f7;">
   <ion-toolbar color="colorgreen">
     <ion-title>panier</ion-title>
     <ion-buttons slot="end">
@@ -12,25 +12,29 @@
 <ion-content color="colorgris" >
 
   <ion-grid fixed>
-    <ion-row>
+    <ion-row >
       <ion-col  *ngFor="let item of panier" ion-col size="12" size-md="4" size-lg="1"  class="modify-grid">
-        <h5>{{item.nom}}</h5>
         <div class="container">
-        <ion-img src="{{item.image}}" style="width: 120px;" ></ion-img>
-        <p>{{item.quantite}} Plats</p>
-      </div>
-      <div class="subAddContain">
-      <div class="subAdd">
-      <ion-button (click)="onSub()" color="colorgris"  size="small" style="background-color: #f6f6f7; color: black;" >
-        <ion-icon name="remove-outline" ></ion-icon>
+          <div style="height: 100px; width: 500px; margin-top: -3px; margin-left: 5px;">
+          <ion-img src="{{item.image}}" style="height: 100px; width:auto; margin-top: auto; margin-left: auto;" ></ion-img> 
+        </div>
+        <div class="principal">
+          <h5>{{item.nom}}</h5>
+        <p style="font-size: small;text-align: center;">{{item.quantite}} Plats</p>
+     <div class="prix">
+    <ion-chip color="dark" mode="ios" outline="false" size="small">
+      <ion-button (click)="onSub()"  fill="clear" shape="round" color="black" size="small">
+        <ion-icon slot="start" name="remove-outline"></ion-icon>
       </ion-button>
-      <span>{{item_qty}}</span>
-      <ion-button  ion-button  (click)="onAdd()" color="colorgris" expand="block" size="small"  style="background-color: #f6f6f7; color: black;" >
-        <ion-icon name="add-outline" ></ion-icon>
+      <ion-label>{{item_qty}}</ion-label>
+      <ion-button (click)="onAdd()" fill="clear" shape="round" color="black" size="small">
+        <ion-icon slot="end" name="add-outline"></ion-icon>
       </ion-button>
+    </ion-chip>
+    <h6>{{item.prix}}FCFA</h6>
     </div>
-      <h6>{{item.prix}}FCFA</h6>
-    </div>
+  </div>
+</div>
       </ion-col>
       
     </ion-row>

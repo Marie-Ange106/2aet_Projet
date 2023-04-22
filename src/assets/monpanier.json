@@ -1,21 +1,21 @@
 [
 
     {    "nom":"ndolet",
-        "image":"assets/image/ndolet.jpg",
+        "image":"assets/image/ndole.png",
         "prix":"600",
         "quantite":"2"
       },
    
       {
         "nom":"beignet haricot",
-        "image":"assets/image/bhb.jpg",
+        "image":"assets/image/bhb1.png",
         "prix":"200",
         "quantite":"2"
       },
     
       {
         "nom":"soya",
-        "image":"assets/image/soya.jpg",
+        "image":"assets/image/soya1.png",
         "prix":"500",
         "quantite":"2"
       }
