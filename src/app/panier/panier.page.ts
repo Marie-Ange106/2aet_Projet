@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { MonpanierService } from '../monpanier.service';
+import { MonpanierService } from '../services/monpanier.service';
 
 @Component({
   selector: 'app-panier',
