@@ -1,0 +1,139 @@
+ion-toolbar {
+  --background: var(--ion-color-tertiary-contrast);
+}
+ion-col {
+  text-align: center;
+}
+ion-searchbar {
+  border-radius: 30px;
+}
+ion-title {
+  text-align: center;
+  font-family: serif;
+  font-weight: bold;
+}
+ion-card {
+  font-family: serif;
+}
+ion-row h4{
+  font-weight: bold;
+}
+ion-button{
+  font-family: serif;
+}
+h6 {
+  font-size: 14px;
+}
+// ion-content******************************
+.container {
+  text-align: center;
+  font-family: serif;
+}
+
+//horizontal-scroll*************************
+.wrapper {
+  max-height: 120px;
+  display: flex;
+  overflow-x: auto;
+  margin-top: 10px;
+  padding: 2px 0px 0px 12px;
+}
+.item {
+  min-width: 100px;
+  height: 40px;
+  line-height: 110px;
+  text-align: center;
+  background: var(--ion-color-secondary-tint);
+  border-radius: 30px;
+  margin-right: 5px;
+}
+.wrapper::-webkit-scrollbar {
+  width: 0;
+}
+
+// category*********************************
+.container-category {
+  display: flex;
+  align-items: flex-end;
+}
+.label-catecoty {
+  text-align: center;
+  margin-top: 8px;
+  font-size: 16px;
+}
+h4 {
+  text-align: center;
+}
+.category-header-right {
+  margin-left: 11px;
+}
+.category-header-left {
+  margin-left: 150px;
+
+  // places****************************
+
+  // backgrouns-places
+}
+.img-places-1 {
+  --background: url("../../assets/images/taro.jpg") 0 0/100% 100% no-repeat;
+  height: 200px;
+}
+.img-places-2 {
+  --background: url("../../assets/images/bhb.jpg") 0 0/100% 100% no-repeat;
+  height: 200px;
+}
+
+// header-places
+.places-heart {
+  margin-left: 242px;
+  --background: ;
+}
+.places-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  margin-top: -10px;
+}
+.left-places-header {
+  margin-left: -36px;
+  margin-right: -7px;
+}
+.right-places-header {
+  margin-right: 3px;
+}
+
+// footer-places
+.footer-places {
+  height: 70px;
+  margin-top: 84px;
+}
+.footer-places-element-up {
+  margin-top: -12px;
+}
+.footer-places-element-down {
+  margin-top: -27px;
+}
+h6 .flex{
+  display: flex;
+}
+//search-bar********************************
+#typeahead-basic {
+  border-radius: 30px;
+  background: var(--ion-color-tertiary-clair);
+  padding: 20px;
+}
+.form-control {
+  border: 1px solid #ffffff;
+  padding: 3px;
+  font-family: serif;
+}
+
+// boutton*******************
+.button-native {
+  border-radius: 85px;
+  width: 90px;
+  /* border-radius: var(--border-radius); */
+
+  width: 100%;
+  height: 100%;
+}

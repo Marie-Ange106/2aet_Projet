@@ -1,17 +1,115 @@
-<ion-header [translucent]="true">
+<ion-header [translucent]="true" class="ion-no-border">
   <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-grid>
+      <ion-title class="margin-top-2"
+        >Yaoundé,Simbock<ion-icon
+          name="location-outline"
+          color="primary"
+        ></ion-icon
+      ></ion-title>
+    </ion-grid>
+  </ion-toolbar>
+
+  <ion-toolbar class="margin-top-1">
+    <!-- <ion-searchbar
+      color="tertiary-clair"
+      placeholder="Rechercher un lieu sur 2eat">
+    </ion-searchbar> -->
+    <input id="typeahead-basic" type="text" class="form-control " placeholder="Rechercher un lieu sur 2eat"  />
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="container">
+  <!-- categorie -->
+  <ion-grid class="category">
+    <ion-row class="container-category">
+      <ion-col class="category-header-right"> <h4 >Catégories</h4> </ion-col>
+      <ion-col class="category-header-left">
+        <h6  color="tertiary">Tout voir</h6>
+      </ion-col>
+    </ion-row>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+    <div class="wrapper">
+      <div class="item"><h6 class="label-catecoty">Eru</h6></div>
+      <div class="item"><h6 class="label-catecoty">Eru</h6></div>
+      <div class="item"><h6 class="label-catecoty">Eru</h6></div>
+      <div class="item"><h6 class="label-catecoty">Eru</h6></div>
+      <div class="item"><h6 class="label-catecoty">Eru</h6></div>
+      <div class="item"><h6 class="label-catecoty">Eru</h6></div>
+    </div>
+  </ion-grid>
+
+<!-- places -->
+  <ion-grid class="places">
+    <ion-row size="12" class="places-header">
+      <ion-col size="8" class="left-places-header"> <h4 class="margin-right">Points de vente</h4> </ion-col>
+      <ion-col size="4" class="right-places-header">
+        <ion-button shape="round">
+          <ion-icon slot="icon-only" name="add" color="light"></ion-icon>
+          <ion-label color="light"  >Ajouter</ion-label>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-card class="img-places-1">
+      <ion-button class="places-heart" shape="round" color="tertiary-clair">
+        <ion-icon slot="icon-only" name="heart-outline" color="dark"></ion-icon>
+      </ion-button>
+      <ion-card class="footer-places">
+        <ion-row class="footer-places-element-up" size="12">
+          <ion-col size="6">
+            <h4>Mamy Taro</h4>
+          </ion-col>
+          <ion-col size="6">
+            <!-- <ngb-rating [rate]="3"></ngb-rating> -->
+            <h5>100 j'aime</h5>
+          </ion-col>
+        </ion-row>
+        <ion-row class="footer-places-element-down" size="12">
+          <ion-col size="6">
+            <h6 class="flex">
+              Simbock
+              <ion-icon slot="icon-only" name="location-outline"></ion-icon>
+            </h6>
+          </ion-col>
+          <ion-col size="6">
+            <h6 class="flex"><ion-icon name="time"></ion-icon>10:00-16:00</h6>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </ion-card>
+
+    <ion-card class="img-places-2">
+      <ion-button class="places-heart" shape="round" color="tertiary-clair">
+        <ion-icon slot="icon-only" name="heart-outline" color="dark"></ion-icon>
+      </ion-button>
+      <ion-card class="footer-places">
+        <ion-row class="footer-places-element-up" size="12">
+          <ion-col size="6">
+            <h4>Mamy Taro</h4>
+          </ion-col>
+          <ion-col size="6">
+            <!-- <ngb-rating [rate]="3"></ngb-rating> -->
+            <h5>100 j'aime</h5>
+          </ion-col>
+        </ion-row>
+        <ion-row class="footer-places-element-down" size="12">
+          <ion-col size="6">
+            <h6>
+              Simbock
+              <ion-icon slot="icon-only" name="location-outline"></ion-icon>
+            </h6>
+          </ion-col>
+          <ion-col size="6">
+            <h6><ion-icon name="time"></ion-icon>10:00-16:00</h6>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </ion-card>
+
+    
+  </ion-grid>
 </ion-content>
