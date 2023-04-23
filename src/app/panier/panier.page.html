@@ -16,22 +16,22 @@
       <ion-col  *ngFor="let item of panier" ion-col size="12" size-md="4" size-lg="1"  class="modify-grid">
         <div class="container">
           <div style="height: 100px; width: 500px; margin-top: -3px; margin-left: 5px;">
-          <ion-img src="{{item.image}}" style="height: 100px; width:auto; margin-top: auto; margin-left: auto;" ></ion-img> 
+          <ion-img src="{{item.image}}"></ion-img> 
         </div>
         <div class="principal">
           <h5>{{item.nom}}</h5>
-        <p style="font-size: small;text-align: center;">{{item.quantite}} Plats</p>
+        <p >{{item_qty}} Plats</p>
      <div class="prix">
-    <ion-chip color="dark" mode="ios" outline="false" size="small">
-      <ion-button (click)="onSub()"  fill="clear" shape="round" color="black" size="small">
-        <ion-icon slot="start" name="remove-outline"></ion-icon>
-      </ion-button>
-      <ion-label>{{item_qty}}</ion-label>
-      <ion-button (click)="onAdd()" fill="clear" shape="round" color="black" size="small">
-        <ion-icon slot="end" name="add-outline"></ion-icon>
-      </ion-button>
-    </ion-chip>
-    <h6>{{item.prix}}FCFA</h6>
+        <div  class = "incrdecre">
+            <ion-button (click)="onSub()"  fill="clear"  style="color:black" size="small">
+              <ion-icon slot="start" name="remove-outline"></ion-icon>
+            </ion-button>
+            <ion-label style="margin-top: 10px;">{{item_qty}}</ion-label>
+            <ion-button (click)="onAdd()" fill="clear" style="color:black" size="small">
+              <ion-icon slot="end" name="add-outline"></ion-icon>
+            </ion-button>
+        </div>
+        <h6>{{item.prix}}FCFA</h6>
     </div>
   </div>
 </div>
@@ -39,28 +39,11 @@
       
     </ion-row>
   </ion-grid>
-    <!-- <ion-grid fixed>
-      <ion-row>
-        <ion-col size="11" style="background-color: #f6f6f7;">
-          <div class="price">
-          <p> Total</p>
-          <p>prix</p>
-        </div>
-        </ion-col>
-      </ion-row>
-    </ion-grid> -->
-  <div class="price" style="background-color: #f6f6f7;">
+    
+  <div class="price">
   <p> Total</p>
   <p>prix</p>
 </div>
-
-  <!-- <ion-grid fixed>
-    <ion-row>
-      <ion-col size="11" class="modify-grid1">
-      <button ion-button style="width: 100%; background-color: #79dc21; color: white; font-weight: bold;">Valider</button>  
-      </ion-col>
-    </ion-row>
-  </ion-grid> -->
 
   <ion-button  color="colorgreen" expand="block" style="background-color: #79dc21">Valider</ion-button>
 
