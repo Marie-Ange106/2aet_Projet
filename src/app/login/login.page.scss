@@ -1,0 +1,90 @@
+
+.rond{
+    width:130px;
+    height: 130px;
+    background: #79dc21;
+    border-radius: 36rem 75rem 200rem  ;
+}
+.rond1{
+    width:130px;
+    height: 130px;
+    background: #79dc21;
+    
+    position: absolute;
+    bottom:0;
+    right: 0;
+    border-radius:  200rem 75rem 36rem;
+}
+
+ion-input{
+    height: 20px;
+    // width: 20px;
+    
+}
+
+.container{
+    position: absolute;
+    bottom: 0;
+    top: 75px;
+    right: 20px;
+    left: 20px;
+    width: auto;
+    height: auto;
+   float: center;
+}
+.forgetpwd{
+    text-transform: capitalize ;
+    font-weight: bold; 
+    right: 20px;
+    font-size: small;
+    margin-top: 1rem;
+    background-color: white;
+    --background-hover:white;
+    //  --color: var(--ion-color-colorgreen);
+    color: #ececee;
+     --color-hover:#79dc21!important;
+     float: right;
+     text-decoration: underline;
+     text-decoration-color: #ececee;
+
+}
+ion-button{
+    --background-hover: var(--background);
+}
+.signup{
+    text-transform: capitalize ;
+    font-weight: bold; 
+    font-size: large;
+    // margin-top: 2rem;
+    background-color: white;
+    --background-hover:white;
+     --color: #79dc21;
+     text-decoration: underline;
+}
+
+.visibilityPwd{
+    // padding-top: 10px; 
+    background-color: white;
+     color:#79dc21;
+     right: 20rem;
+}
+
+.containSign{
+    display: flex;
+    justify-content: center; 
+     margin-top: 3rem;
+}
+
+span{
+    margin-top: 1rem;
+}
+
+.presslog{
+    background-color: #79dc21 ;
+    margin-top: 5rem;
+}
+.showPasswd{
+    display: flex; 
+    justify-content: right;
+}
+
