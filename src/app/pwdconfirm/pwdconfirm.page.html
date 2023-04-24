@@ -1,0 +1,30 @@
+
+
+<div class="rond">
+  <ion-buttons slot="start">
+    <ion-back-button icon="previous" color="colorgris"></ion-back-button>
+  </ion-buttons>
+</div>
+  
+
+<ion-content>
+  <div class="container">
+<h1> Enter New Password</h1>
+  <ion-item>
+    <ion-label  color="colorgreen" position="floating" style="font-size: large; margin-top: 1rem;" >
+    
+      password</ion-label>
+    <ion-input label="password" type="password"  clearInput="true" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label  color="colorgreen" position="floating" style="font-size: large; margin-top: 1rem;" >
+    
+      confirm</ion-label>
+    <ion-input label="password" type="password"  clearInput="true" ></ion-input>
+  </ion-item>
+  <ion-button class="presslog" color="colorgreen" expand="block"[routerLink]="['/login']">Reset </ion-button>
+  
+</div>
+
+</ion-content>

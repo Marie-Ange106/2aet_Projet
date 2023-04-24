@@ -23,6 +23,14 @@ const routes: Routes = [
     path: 'signup',
     loadChildren: () => import('./signup/signup.module').then( m => m.SignupPageModule)
   },
+  {
+    path: 'forgetpwd',
+    loadChildren: () => import('./forgetpwd/forgetpwd.module').then( m => m.ForgetpwdPageModule)
+  },
+  {
+    path: 'pwdconfirm',
+    loadChildren: () => import('./pwdconfirm/pwdconfirm.module').then( m => m.PwdconfirmPageModule)
+  },
 ];
 
 @NgModule({

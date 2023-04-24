@@ -1,0 +1,22 @@
+
+<div class="rond"></div>
+  
+
+<ion-content>
+  <div class="container">
+<h1> Reset Password</h1>
+  <ion-item>
+    <ion-label  color="colorgreen" position="floating" style="font-size: large; margin-top: 1rem;" >
+    
+      Entrer votre Email</ion-label>
+    <ion-input label="text input" type="text"  clearInput="true" ></ion-input>
+  </ion-item>
+
+  <ion-button class="presslog" color="colorgreen" expand="block" [routerLink]="['/pwdconfirm']" >Next</ion-button>
+  <ion-buttons slot="start">
+    <ion-back-button  icon="previous" color="primary"></ion-back-button>
+  <ion-button class="backbtn" fill="clear" expand="block" [routerLink]="['login']" >Back to Login</ion-button>
+  </ion-buttons>
+</div>
+
+</ion-content>

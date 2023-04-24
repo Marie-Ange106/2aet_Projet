@@ -1,0 +1,33 @@
+.presslog{
+    background-color: #79dc21 ;
+    margin-top: 3rem;
+}
+
+h1{
+    text-align: center;
+    color: #79dc21;
+}
+.container{
+    position: absolute;
+    bottom: 0;
+    top: 75px;
+    right: 20px;
+    left: 20px;
+    width: auto;
+    height: auto;
+   float: center;
+}
+.rond{
+    width:130px;
+    height: 130px;
+    background: #79dc21;
+    border-radius: 36rem 75rem 200rem  ;
+}
+
+.backbtn{
+    // font-weight: bold; 
+    margin-top: 2rem; 
+    text-transform: capitalize;
+    font-size: small; 
+    color: gainsboro;
+}
