@@ -1,0 +1,43 @@
+.presslog{
+    background-color: #79dc21 ;
+    margin-top: 4rem;
+    color: white;
+    border-radius: 1rem;
+}
+
+h1{
+    text-align: center;
+    color: #79dc21;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.rond{
+    width:130px;
+    height: 130px;
+    background: #bffe87;
+    border-radius: 36rem 75rem 200rem  ;
+}
+
+.container{
+    position: absolute;
+    bottom: -12rem;
+    top: 30px;
+    right: 20px;
+    left: 20px;
+    width: auto;
+    height: auto;
+  
+}
+.image{
+    display: flex;
+    align-items: center; 
+    margin-left: auto; 
+    margin-right: auto; 
+    justify-content: left;
+}
+ion-label{
+
+    font-size: large;
+    
+}

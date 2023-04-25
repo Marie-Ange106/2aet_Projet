@@ -1,0 +1,41 @@
+<ion-toolbar>
+  <div  class="rond">
+      <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+      <!-- <ion-title>login</ion-title> -->
+    </div>
+    <h1> Ajout Plat</h1>
+  </ion-toolbar>
+  
+  <ion-content color="colorgris">
+    
+  <div class="container">
+    <div class="image"  >
+      <ion-card style=" border-radius: 20px;">
+        <ion-img style="display: block; justify-content: center; margin-left: auto; margin-right: auto;" src="assets/image/imgdefault.avif"></ion-img>
+      </ion-card>
+        <ion-button  style="color: white;float: right; border-radius: 2px;" fill="solid"  >
+          <ion-icon slot="start" name="add"></ion-icon>
+          Ajouter</ion-button>
+      </div>
+    <ion-item>
+      <ion-label   position="floating"  >Nom</ion-label>
+      <ion-input label="text input" type="text"  clearInput="true" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label   position="floating"  >Temps Cuisson</ion-label>
+      <ion-input label="text input" type="text"  clearInput="true" placeholder="min"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label   position="floating"  >Prix</ion-label>
+      <ion-input label="text input" type="text"  clearInput="true" placeholder="FCFA" ></ion-input>
+    </ion-item>
+   
+      <ion-button class="presslog" color="colorgreen" expand="block" fill="clear" shape="round" >Soumettre</ion-button>
+
+    </div>
+    
+    <div class="rond1"></div>
+  </ion-content>
+  

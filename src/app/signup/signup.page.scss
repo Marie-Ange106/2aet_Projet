@@ -1,37 +1,137 @@
+// ion-input{
+// position: absolute;
+// // top: 0;
+// left: 0;
+// right: 0;
+// // height: 100px;
+// // width: 100px;
+// // font-size: 17px;
+// // font-weight: 600;
+// border: 2px solid black;
+// border-radius: 10px;
+// outline: none;
+// padding: 1rem;
+// background: none;
+// z-index: 1;
+// color: blue;
+
+// }
+
+// ion-input:focus{
+//     border-color: #79dc21;
+// }
+
+// label{
+//     // position: absolute;
+//     left: 1rem;
+//     // top: 1rem;
+//     padding: 0 0.25rem;
+//     color: #79dc21;
+//     font-size: 1rem;
+//     transition: 0.3s;
+// }
+// form{
+//     position: relative;
+//     margin-bottom: 1rem;
+//     height: 50px;
+// }
+
+.rond{
+    width:130px;
+    height: 130px;
+    background: #bffe87;
+    border-radius: 36rem 75rem 200rem  ;
+}
+.rond1{
+    width:130px;
+    height: 130px;
+    background: #bffe87;
+    
+    position: absolute;
+    bottom:0;
+    right: 0;
+    border-radius:  200rem 75rem 36rem;
+}
+
 ion-input{
-position: absolute;
-// top: 0;
-left: 0;
-right: 0;
-// height: 100px;
-// width: 100px;
-// font-size: 17px;
-// font-weight: 600;
-border: 2px solid black;
-border-radius: 10px;
-outline: none;
-padding: 1rem;
-background: none;
-z-index: 1;
-color: blue;
-
+    height: 20px;
+    // width: 20px;
+    
 }
 
-ion-input:focus{
-    border-color: #79dc21;
+.container{
+    position: absolute;
+    bottom: 0;
+    top: 75px;
+    right: 20px;
+    left: 20px;
+    width: auto;
+    height: auto;
+   float: center;
+}
+.forgetpwd{
+    text-transform: capitalize ;
+    font-weight: bold; 
+    right: 20px;
+    font-size: small;
+    margin-top: 1rem;
+    background-color: white;
+    --background-hover:white;
+    //  --color: var(--ion-color-colorgreen);
+    color: #ececee;
+     --color-hover:#79dc21!important;
+     float: right;
+     text-decoration: underline;
+     text-decoration-color: #ececee;
+
+}
+ion-button{
+    --background-hover: var(--background);
+}
+.signup{
+    text-transform: capitalize ;
+    font-weight: bold; 
+    font-size: large;
+    // margin-top: 2rem;
+    background-color: white;
+    --background-hover:white;
+     --color: #79dc21;
+     text-decoration: underline;
 }
 
-label{
-    // position: absolute;
-    left: 1rem;
-    // top: 1rem;
-    padding: 0 0.25rem;
+.visibilityPwd{
+    // padding-top: 10px; 
+    background-color: white;
+     color:#79dc21;
+     right: 20rem;
+}
+
+.containSign{
+    display: flex;
+    justify-content: center; 
+     margin-top: 3rem;
+}
+
+
+
+.presslog{
+    background-color: #79dc21 ;
+    margin-top: 3.5rem;
+    color: white;
+    border-radius: 1rem;
+}
+.showPasswd{
+    display: flex; 
+    justify-content: right;
+}
+
+h1,h3{
+    text-align: center;
+    
+}
+h1{
     color: #79dc21;
-    font-size: 1rem;
-    transition: 0.3s;
 }
-form{
-    position: relative;
-    margin-bottom: 1rem;
-    height: 50px;
+h3{
+    color: #ececee;
 }

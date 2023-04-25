@@ -29,4 +29,11 @@ export class LoginPage implements OnInit {
     this.log=JSON.parse(a);
     this.router.navigate(['/pwdconfirm']);
   }
+
+  page3(obj:any){
+    localStorage.setItem('sign',JSON.stringify(obj));
+    this.router.navigate(['/signup']);
+  }
+
 }
+

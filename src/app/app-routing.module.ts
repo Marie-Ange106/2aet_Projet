@@ -31,6 +31,14 @@ const routes: Routes = [
     path: 'pwdconfirm',
     loadChildren: () => import('./pwdconfirm/pwdconfirm.module').then( m => m.PwdconfirmPageModule)
   },
+  {
+    path: 'detailplat',
+    loadChildren: () => import('./detailplat/detailplat.module').then( m => m.DetailplatPageModule)
+  },
+  {
+    path: 'detailresto',
+    loadChildren: () => import('./detailresto/detailresto.module').then( m => m.DetailrestoPageModule)
+  },
 ];
 
 @NgModule({

@@ -1,17 +1,49 @@
-
-  <ion-toolbar>
-    <ion-title>signup</ion-title>
+<ion-toolbar>
+  <div  class="rond">
+      <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+      <!-- <ion-title>login</ion-title> -->
+    </div>
   </ion-toolbar>
-
-
-<ion-content>
-  <div class="form">
+  
+  <ion-content color="colorgris">
+    <h1> SIGN UP</h1>
+    
+  <ion-img></ion-img>
+  <div class="container">
+    
     <ion-item>
-      <ion-label>nom</ion-label>
-      <ion-input type="text" placeholder="nom"></ion-input>
+      <ion-label   position="floating" style="font-size: large;" >
+      
+        Nom</ion-label>
+      <ion-input label="text input" type="text"  clearInput="true" ></ion-input>
     </ion-item>
-   
-    <label >email</label>
-    <ion-input type="email" placeholder="email"></ion-input>
-  </div>
-</ion-content>
+    <ion-item>
+    <ion-label   position="floating" style="font-size: large;" >Email</ion-label>
+    <ion-input label="text input" type="Email"  clearInput="true" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label   position="floating" style="font-size: large;" >Numero</ion-label>
+    <ion-input label="text input" type="number"  clearInput="true" ></ion-input>
+  </ion-item>
+    <ion-item>
+      <ion-label  style="font-size: large;" position="floating">
+  
+        Mot de Passe</ion-label>
+      <div class="showPasswd" >
+      <ion-input color="colorgreen" label="password input" type="password" labelPlacement="stacked" ></ion-input>
+      <button  class="visibilityPwd" fill="clear" icon-only  type="button" (click)="showPasswdText">
+        <ion-icon *ngIf="!showPasswdText" name="eye"></ion-icon>
+        <ion-icon *ngIf="showPasswdText" name="eye"></ion-icon>
+      </button>
+    </div>
+    </ion-item>
+    
+      <ion-button class="presslog" color="colorgreen" expand="block" fill="clear" shape="round" >Signup</ion-button>
+
+    </div>
+    
+    <div class="rond1"></div>
+  </ion-content>
+  

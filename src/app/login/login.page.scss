@@ -2,13 +2,13 @@
 .rond{
     width:130px;
     height: 130px;
-    background: #79dc21;
+    background: #bffe87;
     border-radius: 36rem 75rem 200rem  ;
 }
 .rond1{
     width:130px;
     height: 130px;
-    background: #79dc21;
+    background: #bffe87;
     
     position: absolute;
     bottom:0;
@@ -82,6 +82,8 @@ span{
 .presslog{
     background-color: #79dc21 ;
     margin-top: 5rem;
+    color: white;
+    border-radius: 1rem;
 }
 .showPasswd{
     display: flex; 

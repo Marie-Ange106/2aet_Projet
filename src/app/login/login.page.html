@@ -11,14 +11,14 @@
 <ion-img></ion-img>
 <div class="container">
   <ion-item>
-    <ion-label  color="colorgreen" position="floating" style="font-size: large;" >
+    <ion-label   position="floating" style="font-size: large;" >
     
       Nom</ion-label>
     <ion-input label="text input" type="text"  clearInput="true" ></ion-input>
   </ion-item>
 
   <ion-item>
-    <ion-label color="colorgreen" style="font-size: large;" position="floating">
+    <ion-label  style="font-size: large;" position="floating">
 
       Mot de Passe</ion-label>
     <div class="showPasswd" >
@@ -32,10 +32,10 @@
   
     <ion-button fill="clear" class="forgetpwd" [routerLink]="['/forgetpwd']"> mot de passe oublié?</ion-button>
    
-    <ion-button class="presslog" color="colorgreen" expand="block" >Login</ion-button>
+    <ion-button class="presslog" color="colorgreen" expand="block" shape="round"  fill="clear">Login</ion-button>
     <div class="containSign" >
    <span >New here?</span> 
-   <ion-button class="signup"  fill="clear">Sign Up </ion-button>
+   <ion-button class="signup"  fill="clear"[routerLink]="['/signup']">Sign Up </ion-button>
   </div>
   </div>
   
