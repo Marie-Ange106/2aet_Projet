@@ -11,5 +11,7 @@ export class DetailrestoPage implements OnInit {
 
   ngOnInit() {
   }
-
+ close(){
+  
+ }
 }

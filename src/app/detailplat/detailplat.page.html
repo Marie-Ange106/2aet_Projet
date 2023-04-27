@@ -1,41 +1,40 @@
-<ion-toolbar>
-  <div  class="rond">
-      <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
-    </ion-buttons>
-      <!-- <ion-title>login</ion-title> -->
-    </div>
-    <h1> Ajout Plat</h1>
-  </ion-toolbar>
-  
-  <ion-content color="colorgris">
+<!-- <div class="header" style="background-color: white;">
+  <ion-toolbar color="secondary"> -->
+    <div  class="rond">
+      <ion-buttons slot="end">
+        <ion-button (click)="close()" fill="clear">
+          <ion-icon slot="icon-only" name="close"></ion-icon>
+        </ion-button>
+        <ion-title>Ajout Plat</ion-title>
+      </ion-buttons>
+        </div>
+    <!-- </ion-toolbar>
+  </div> -->
     
-  <div class="container">
-    <div class="image"  >
-      <ion-card style=" border-radius: 20px;">
-        <ion-img style="display: block; justify-content: center; margin-left: auto; margin-right: auto;" src="assets/image/imgdefault.avif"></ion-img>
-      </ion-card>
-        <ion-button  style="color: white;float: right; border-radius: 2px;" fill="solid"  >
-          <ion-icon slot="start" name="add"></ion-icon>
-          Ajouter</ion-button>
+    <ion-content color="colorgris">
+      
+    <div class="container">
+     
+        <label class="item item-input">Nom
+          <input type="text" placeholder="Menu">
+        </label>
+        <label class="item item-input">Temps Cuisson
+          <input type="text" placeholder="Minute">
+        </label>
+        <label class="item item-input">Prix
+          <input type="text" placeholder="FCFA">
+        </label>
+        
+    <h6 style="font-weight: bold;"> place image</h6>
+    <p style="font-size: small; color: #757575;">Ajouter les images de votre plat</p>
+      <ion-button class="pressimg" color="colorgreen"  fill="outline" shape="round" > <ion-icon name="camera-outline"></ion-icon>Ajouter image</ion-button>
+     
+      <div style="display: flex; justify-content: left; ">
+        <ion-button class="pressback" color="danger"  shape="round" >Cancel</ion-button>
+        <ion-button  class="presslog" fill="clear"  shape="round" >Soumettre</ion-button>
       </div>
-    <ion-item>
-      <ion-label   position="floating"  >Nom</ion-label>
-      <ion-input label="text input" type="text"  clearInput="true" ></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label   position="floating"  >Temps Cuisson</ion-label>
-      <ion-input label="text input" type="text"  clearInput="true" placeholder="min"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label   position="floating"  >Prix</ion-label>
-      <ion-input label="text input" type="text"  clearInput="true" placeholder="FCFA" ></ion-input>
-    </ion-item>
-   
-      <ion-button class="presslog" color="colorgreen" expand="block" fill="clear" shape="round" >Soumettre</ion-button>
-
-    </div>
+      </div>
+      
+     
+    </ion-content>
     
-    <div class="rond1"></div>
-  </ion-content>
-  

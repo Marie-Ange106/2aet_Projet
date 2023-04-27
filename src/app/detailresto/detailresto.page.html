@@ -1,61 +1,52 @@
-<ion-toolbar>
+<!-- <div class="header" style="background-color: white;">
+  <ion-toolbar color="secondary"> -->
   <div  class="rond">
-      <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
+    <ion-buttons slot="end">
+      <ion-button (click)="close()" fill="clear">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+      <ion-title>Ajout Restaurant</ion-title>
     </ion-buttons>
-      <!-- <ion-title>login</ion-title> -->
-    </div>
-    <h1> Ajout Restaurant</h1>
-  </ion-toolbar>
+      </div>
+  <!-- </ion-toolbar>
+</div> -->
   
   <ion-content color="colorgris">
     
   <div class="container">
-    <div class="image"  >
-      <ion-card style=" border-radius: 20px;">
-        <ion-img style="display: block; justify-content: center; margin-left: auto; margin-right: auto;" src="assets/image/imgdefault.avif"></ion-img>
-      </ion-card>
-        <ion-button  style="color: white;float: right; border-radius: 2px;" fill="solid"  >
-          <ion-icon slot="start" name="add"></ion-icon>
-          Ajouter</ion-button>
-      </div>
-    <ion-item>
-      <ion-label   position="floating"  >Nom</ion-label>
-      <ion-input label="text input" type="text"  clearInput="true" ></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label   position="floating"  >latitude</ion-label>
-      <ion-input label="text input" type="text"  clearInput="true" ></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label   position="floating"  >longitude</ion-label>
-      <ion-input label="text input" type="text"  clearInput="true" ></ion-input>
-    </ion-item>
-    <ion-item>
-    <ion-label   position="floating" >heure ouverture</ion-label>
-    <ion-input label="text input" type="date"  clearInput="true" placeholder="heure ouverture"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label   position="floating" >heure fermeture</ion-label>
-    <ion-input label="text input" type="date"  clearInput="true" placeholder="heure fermeture"></ion-input>
-  </ion-item>
-    <ion-item>
-      <ion-label   position="floating">
-  
-        contact proprietaire</ion-label>
-      <div class="showPasswd" >
-      <ion-input color="colorgreen" label="password input" type="tel" labelPlacement="stacked" ></ion-input>
-     
+   
+      <label class="item item-input">
+        <input type="text" placeholder="Nom">
+      </label>
+      <label class="item item-input">
+        <input type="date" placeholder="heure ouverture">
+      </label>
+      <label class="item item-input">
+        <input type="date" placeholder="heure fermeture">
+      </label>
+      <label class="item item-input">
+        <input type="text" placeholder="longitude">
+      </label>
+      <label class="item item-input">
+        <input type="text" placeholder="latitude">
+      </label>
+      <label class="item item-input">
+        <input type="tel" placeholder="contact">
+      </label>
+      <label class="item item-input">
+        <textarea type="text" placeholder="Description"></textarea>
+      </label>
+    
+  <h6 style="font-weight: bold;"> place image</h6>
+  <p style="font-size: small; color: #757575;">Ajouter les images de votre restaurant</p>
+    <ion-button class="pressimg" color="colorgreen"  fill="outline" shape="round" > <ion-icon name="camera-outline"></ion-icon>Ajouter image</ion-button>
+   
+    <div style="display: flex; justify-content: left; ">
+      <ion-button class="pressback" color="danger"  shape="round" >Cancel</ion-button>
+      <ion-button  class="presslog" fill="clear"  shape="round" >Soumettre</ion-button>
     </div>
-    </ion-item>
-    <ion-item>
-      <ion-label   position="floating" style="font-size: large;" >Description</ion-label>
-      <ion-textarea placeholder="Entrer plus d'information ici..." ></ion-textarea>
-    </ion-item>
-      <ion-button class="presslog" color="colorgreen" expand="block" fill="clear" shape="round" >Soumettre</ion-button>
-
     </div>
     
-    <div class="rond1"></div>
+   
   </ion-content>
   

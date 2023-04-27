@@ -12,4 +12,7 @@ export class DetailplatPage implements OnInit {
   ngOnInit() {
   }
 
+  async close(){
+    
+  }
 }
